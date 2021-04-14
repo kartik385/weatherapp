@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.app {
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/19/21/39/antarctica-3093274_960_720.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+.app.warm {
+  background-image: url("https://cdn.pixabay.com/photo/2018/05/28/18/35/desert-3436700_960_720.jpg");
+}
+main {
+  padding: 25px;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+.search-box {
+  width: 100%;
+  margin: 0px 0px 75px 0px;
+}
+.search-box .search-tab {
+  outline: none;
+  appearance: none;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  margin-top: -25px;
+  border-radius: 0px 0px 16px 16px;
+  font-size: 20px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+.search-box .search-tab:focus {
+  background: #c2e59c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  font-weight: bolder;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.location-box .location {
+  text-align: center;
+  color: beige;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 10px auto;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+}
+.location-box .date {
+  text-align: center;
+  color: beige;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 10px auto;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  display: inline-block;
+  color: azure;
+  font-size: 101px;
+  font-weight: bolder;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 30px auto;
+  padding: 15px 25px;
+  border-radius: 16px;
+}
+.weather-box .weather {
+  display: block;
+  color: azure;
+  font-size: 67px;
+  font-weight: bolder;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
